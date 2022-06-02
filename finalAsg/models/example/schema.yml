@@ -1,0 +1,67 @@
+
+version: 2
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+
+  - name: avgmilestoneonea
+    description: "Monthly average "
+    columns:
+      - name: scheme
+      - name: Month
+      - name: Year
+      - name: avg(nav)
+      - name: avg(repurchase)
+      - name: avg(sale)
+        tests:
+          - unique
+          - not_null
+  - name: datemilestoneoneb
+    description: "max and min "
+    columns:
+      - name: category
+      - name: Min_Nav
+      - name: Max_Nav
+      - name: Date
+        tests:
+          - unique
+          - not_null
+  - name: discontinued
+    description: "discontinued year of mutual funds "
+    columns:
+      - name: Mutual_Funds_Name
+      - name: Year
+        tests:
+          - unique
+          - not_null
+  - name: mini1sub1extra
+    description: "extra table for to store year , month , nav and date"
+    columns:
+      - name: nav_date
+      - name: year
+      - name: Month
+      - name: nav
+        tests:
+          - unique
+          - not_null
+  - name: mile1ym
+    description: "extra table for to store year , month , nav and date"
+    columns:
+      - name: nav_date
+      - name: year
+      - name: Month
+      - name: nav
+        tests:
+          - unique
+          - not_null

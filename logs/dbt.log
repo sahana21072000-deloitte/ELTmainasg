@@ -1,0 +1,8 @@
+
+
+============================== 2022-06-01 06:04:30.875629 | 5de7cb45-ea91-4810-a345-da0817d408d2 ==============================
+06:04:30.875629 [info ] [MainThread]: Running with dbt=1.1.0
+06:04:30.876626 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\sahanam6\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+06:04:30.877622 [debug] [MainThread]: Tracking: tracking
+06:04:31.059717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022739942070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227399426D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022739942250>]}
+06:04:46.927966 [debug] [MainThread]: Starter project path: C:\Users\sahanam6\AppData\Local\Programs\Python\Python39\lib\site-packages\dbt\include\starter_project
